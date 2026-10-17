@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Pong</title>
+    <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+
+    <h1>Rainbow Pong</h1>
+    <h2>Be the first to reach 8!</h2>
+    
+    <div class="menu">
+        <button class="btn-easy active" onclick="setDifficulty('easy', this)">Easy</button>
+        <button class="btn-medium" onclick="setDifficulty('medium', this)">Medium</button>
+        <button class="btn-hard" onclick="setDifficulty('hard', this)">Hard</button>
+    </div>
+
+    <canvas id="pongCanvas" width="600" height="400"></canvas>
+    <a href="aboutindex.html">Click here to go back to harkerorganizer.com</a>
+
+    <script src="bob.js"></script>
+</body>
+</html>
