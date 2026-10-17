@@ -1,0 +1,28 @@
+body{
+    background-color: yellowgreen;
+}
+
+a{
+    color: green;
+    font-size: x-large;
+    &:hover{
+        color: yellowgreen;
+    }
+    padding: 7px;
+    display: inline-block;
+    background-color: rgb(29, 231, 2);
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    gap: 20px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
