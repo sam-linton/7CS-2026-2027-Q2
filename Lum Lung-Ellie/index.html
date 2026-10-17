@@ -1,0 +1,118 @@
+</html>
+
+<head>
+    <h1>Snapcard </h1>
+    <title>Snapcard</title>
+    <link rel="stylesheet" href="style.css">
+    <marquee scrollamount="15" style="color: rgb(243, 243, 247); font-family: 'Gills Sans', ">
+        Gift the easy way Gift the easy way Gift the easy way Gift the easy way Gift the easy way Gift the easy way Gift
+        the easy way Gift the easy way Gift the easy way Gift the easy way Gift the easy way Gift the easy way Gift the
+        easy way Gift the easy way Gift the easy way Gift the easy way q
+    </marquee>
+
+<body>
+    <input type="text" id="searchBar" onkeyup="filterCards()" placeholder="Search...">
+    </div>
+    <div class="image-row">
+        <div class="group">
+            <img src="robux.jpg" alt="roblox" width="175">
+            <button>
+                <a href="https://www.roblox.com/upgrades/robux">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="nintendo 2.jpg" alt="nintendo" width="200">
+            <button>
+                <a
+                    href="https://www.nintendo.com/us/retail-offers/nintendo-eshop-cards/?srsltid=AU7gw4VWZkLfjwu4oyOflE2OMusCYiRmGdwI-2b2c2JbtvfMQ5N3GlRq">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="amazon gift card.jpg" alt="amazon" width="200">
+            <button>
+                <a href="https://www.amazon.com/Amazon-eGift-Card-Logo-Animated/dp/B07PCMWTSG?th=1">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="nike.avif" alt="nike" width="160">
+            <button>
+                <a href="https://www.nike.com/gift-cards">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="target 2.jpg" alt="target" width="150">
+            <button>
+                <a href="https://www.target.com/c/target-giftcards-gift-cards/-/N-5xsxt">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="amc.jpg" alt="amc" width="175">
+            <button>
+                <a href="https://www.amctheatres.com/gift-cards">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="apple.jpg" alt="apple" width="230">
+            <button>
+                <a href="https://www.apple.com/shop/gift-cards">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="starbucks.jpg" alt="starbucks" width="200">
+            <button>
+                <a href="https://www.starbucks.com/gift">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="doordash.jpg" alt="doordash" width="150">
+            <button>
+                <a
+                    href="https://www.doordash.com/gift-cards/?srsltid=AU7gw4UkC89sHO8BMqpRA2LTOqljPJdveqbtZKGELYcvp297_HdDvzP_">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="sephora.jpg" alt="sephora" width="175">
+            <button>
+                <a
+                    href="https://www.sephora.com/product/sephora-collection-gift-card-P510100?skuId=00540&icid2=giftcards_physical_product_list_041125">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="walmart.jpg" alt="walmart" width="200">
+            <button>
+                <a href="https://www.walmart.com/browse/gifts-registry/walmart-gift-cards/1094765_96894_2978360_2721610">Buy</a>
+            </button>
+        </div>
+        <div class="group">
+            <img src="chipotle.jpg" alt="chipotle" width="200">
+            <button>
+                <a
+                    href="https://www.chipotle.com/gift-cards">Buy</a>
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function filterCards() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let images = document.getElementsByTagName('img');
+
+            for (let img of images) {
+                let name = img.alt.toLowerCase();
+                if (!name) continue;
+
+                let button = img.nextElementSibling;
+
+                if (name.includes(input)) {
+                    img.style.display = "";
+                    if (button) button.style.display = "";
+                } else {
+                    img.style.display = "none";
+                    if (button) button.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    </html>
