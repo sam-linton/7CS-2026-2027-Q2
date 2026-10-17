@@ -1,0 +1,116 @@
+<html lang="en">
+    
+<head>
+    <title>Temu Wordle</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="Temu_Image.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Temu Wordle</h1>
+    </div>
+    <div class="container">
+        <div class="message" id="message"></div>
+        <div class="boxes">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="q-p">
+                <div class="q" id="qLetter" onclick="typeLetter('Q')">Q</div>
+                <div class="w" id="wLetter" onclick="typeLetter('W')">W</div>
+                <div class="e" id="eLetter" onclick="typeLetter('E')">E</div>
+                <div class="r" id="rLetter" onclick="typeLetter('R')">R</div>
+                <div class="t" id="tLetter" onclick="typeLetter('T')">T</div>
+                <div class="y" id="yLetter" onclick="typeLetter('Y')">Y</div>
+                <div class="u" id="uLetter" onclick="typeLetter('U')">U</div>
+                <div class="i" id="iLetter" onclick="typeLetter('I')">I</div>
+                <div class="o" id="oLetter" onclick="typeLetter('O')">O</div>
+                <div class="p" id="pLetter" onclick="typeLetter('P')">P</div>
+            </div>
+            <div class="a-l">
+                <div class="a" id="aLetter" onclick="typeLetter('A')">A</div>
+                <div class="s" id="sLetter" onclick="typeLetter('S')">S</div>
+                <div class="d" id="dLetter" onclick="typeLetter('D')">D</div>
+                <div class="f" id="fLetter" onclick="typeLetter('F')">F</div>
+                <div class="g" id="gLetter" onclick="typeLetter('G')">G</div>
+                <div class="h" id="hLetter" onclick="typeLetter('H')">H</div>
+                <div class="j" id="jLetter" onclick="typeLetter('J')">J</div>
+                <div class="k" id="kLetter" onclick="typeLetter('K')">K</div>
+                <div class="l" id="lLetter" onclick="typeLetter('L')">L</div>
+            </div>
+            <div class="enter-backspace">
+                <div class="enter" id="enterButton" onclick="pressEnter()">Enter</div>
+                <div class="z" id="zLetter" onclick="typeLetter('Z')">Z</div>
+                <div class="x" id="xLetter" onclick="typeLetter('X')">X</div>
+                <div class="c" id="cLetter" onclick="typeLetter('C')">C</div>
+                <div class="v" id="vLetter" onclick="typeLetter('V')">V</div>
+                <div class="b" id="bLetter" onclick="typeLetter('B')">B</div>
+                <div class="n" id="nLetter" onclick="typeLetter('N')">N</div>
+                <div class="m" id="mLetter" onclick="typeLetter('M')">M</div>
+                <div class="backspace" id="backspaceButton" onclick="deleteLetter()">⌫</div>
+            </div>
+        </div>
+        <div class="playAgain" id="playAgain" onclick="playAgain()">
+            <p>⟲ Play Again</p>
+        </div>
+        <div class="ad" id="ad">
+            <button class="closeAdButton" id="closeAdButton" onclick="this.closest('.ad').remove()">
+                <p>X</p>
+            </button>
+            <button class="fakeButton" id="fakeButton" onclick="spawnAd(false)">
+                <p>X</p>
+            </button>
+            <img src="Temu_Image.png" alt="">
+            <h2>Temu.com</h2>
+        </div>
+        <div class="bottom">
+            <p>Made in China by the Temu Company</p>
+        </div>
+    </div>
+</body>
+
+</html>

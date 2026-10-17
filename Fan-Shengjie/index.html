@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dino Quest</title>
+    <link rel="stylesheet" href="Dino/style.css">
+</head>
+
+<body>
+    <h1>Dino Game </h1>
+
+    <div class="coin-bar">
+        Coins: <span id="coins">0</span>
+    </div>
+
+    <h3>Earn coins by jumping over the cactus!</h3>
+
+    <div id="game">
+        <div id="dino">🦖</div>
+        <div id="cactus">🌵</div>
+    </div>
+
+    <p>Press Space to jump</p>
+    <button onclick="restart()">RESTART</button>
+    <button onclick="resetBlooks()">RESET COLLECTION</button>
+    <h3 id="message"></h3>
+
+    <hr>
+
+    <h2> Character Shop</h2>
+    <p>Buy Characters With Coins</p>
+
+    <div class="shop">
+        <div class="pack">
+            <div><img src="IMG_0215 (1).jpg" alt="Dog"></div>
+            <h3>Dog Pack</h3>
+            <p>Cost: 10 coins</p>
+            <button onclick="buyPack()">Open Pack</button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <hr>
+
+    <h2> Collection</h2>
+    <p>Blooks collected: <span id="total">0</span></p>
+    <div id="collection"></div>
+
+    <script src="Dino/script.js"></script>
+</body>
+</html> 

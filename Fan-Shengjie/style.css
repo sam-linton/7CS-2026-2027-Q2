@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 25px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+    background: white;
+}
+
+img{
+    width: 8rem;
+}
+
+h1 {
+    color: black;
+    font-size: 38px;
+}
+
+.coin-bar {
+    display: inline;
+    background: #56dafb;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#game {
+    width: 600px;
+    height: 200px;
+    max-width: 90%;
+    border-bottom: 4px solid #52796f;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background:rgb(194, 193, 193)
+} 
+#dino {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    font-size: 45px;
+    transform: scaleX(-1);
+}
+
+#cactus {
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+    font-size: 35px;
+}
+
+.jump {
+    animation: jump 0.8s ease-in-out;
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    50% { bottom: 120px; }
+    100% { bottom: 0; }
+}
+
+button {
+    background: #52796f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #344e41;
+    transform: scale(1.05);
+}
+
+#message {
+    color: #bc4749;
+}
+
+hr {
+    border: 1px solid #d7e5d8;
+    margin: 35px auto;
+    max-width: 850px;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pack {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.pack-picture {
+    background: #d8f3dc;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 55px;
+}
+
+#result {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#collection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.blook {
+    background: white;
+    width: 130px;
+    padding: 15px 5px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px #00000015;
+}
+
+.blook-emoji {
+    font-size: 42px;
+}
+
+.blook p {
+    margin: 8px 0;
+}
+
+.Common {
+    border-bottom: 5px solid #9e9e9e;
+}
+
+.Rare {
+    border-bottom: 5px solid #3498db;
+}
+
+.Epic {
+    border-bottom: 5px solid #9b59b6;
+}
+
+.Legendary {
+    border-bottom: 5px solid #f1c40f;
+}
+
+@media (max-width: 500px) {
+    #game {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
