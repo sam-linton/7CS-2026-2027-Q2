@@ -1,0 +1,81 @@
+.menu{
+    height: 2rem;
+    display: flex;
+    padding: 1rem;
+    gap: 3rem; 
+
+    background-color: rgb(205, 241, 255);
+    
+    a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(4, 21, 38);
+        text-decoration: none;
+        transition: 0.4s;
+    
+    
+        
+         &:hover{
+           color: rgb(19, 123, 227);
+            scale: 1.5;
+            text-decoration:underline ;
+            
+        }
+
+          
+    
+    
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+.card{
+    height: 26rem;
+    width: 20rem;
+    background-color: rgb(109, 169, 228);
+    margin: 2rem;
+    border-radius: 1rem;
+    
+    
+}
+
+.card{
+    h1{
+        padding: 0.5rem;
+    }
+    p{
+        padding: 0.1rem;
+    }
+
+
+    img{
+        padding: 0.5rem;
+    }
+   
+}
+
+
+body{
+    background-color: rgb(226, 249, 255);
+    
+}
+
+
+
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
