@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <title> Cookie Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 id="count-display" style="display: inline-block; background-color: rgba(64, 64, 64, 0.6); padding: 8px; margin-bottom: 24px;">0 cookies</h1>
+    <p id="per-second-display" style="margin-left: 100px;">per second: 0</p>
+    <img src="cookie.jpg" alt="Cookie" width="200" height="200" onclick="clickCookie()" style="display: block; margin: 0 100px;" />
+     <img src="shine.jpg" alt="Cookie" width="300" height="300" style="display: block; margin: 0 100px;" />
+<button type="button" onclick="buyBuilding('cursor')" style="display: block; margin: 16px 100px;">
+    buy a cursor (10 cookies)
+</button>
+
+<button type="button" onclick="buyBuilding('grandma')" style="display: block; margin: 16px 100px;">
+    hire a grandma (100 cookies)
+</button>
+
+<button type="button" onclick="buyBuilding('farm')" style="display: block; margin: 16px 100px;">
+    buy a farm (1100 cookies)
+</button>
+    <button type="button" onclick="buyBuilding('mine')" style="display: block; margin: 16px 100px;">
+    buy a mine (12000 cookies)
+</button>
+    <button type="button" onclick="buyBuilding('factory')" style="display: block; margin: 16px 100px;">
+    buy a factory (130000 cookies)
+</button>
+<button type="button" onclick="buyBuilding('bank')" style="display: block; margin: 16px 100px;">
+    buy a bank (1.4 million cookies)
+</button>
+</body>
+</html>
