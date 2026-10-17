@@ -1,0 +1,46 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    font-family: Arial;
+}
+.card {
+    font-family: Arial;
+    width: 17rem;
+    background-color: tan;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px
+    gray;
+
+p{
+    line-height: 1.5rem;
+    height: 2rem;
+    overflow: scroll;
+}
+}
+button {
+    margin-top: 1rem;
+    background-color: pink;
+    border-style: none;
+    padding: 0.25em 0rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.card {
+    margin-top:0.5rem;
+    font-size: 1.5rem;
+}
+img {
+    width: 100%;
+    border-radius: 1rem
+}
+
+.gallery {
+    display: flex;
+    grid-template-columns: auto auto auto;
+}

@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0c9;
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* Fake Error Window Styling */
+.fake-popup {
+    position: absolute;
+    width: 280px;
+    background: #ece9d8;
+    border: 2px solid #0055ea;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    font-family: Tahoma, sans-serif;
+    z-index: 1000;
+}
+
+.popup-header {
+    background: #0055ea;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-body {
+    padding: 14px;
+    font-size: 12px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-icon {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: #d13d3d;
+    border: none;
+    color: white;
+    padding: 1px 6px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005999;
+}
+/* fake dashboard container */
+.system-panel {
+    background: #f1f5f9; /* light gray panel */
+    border: 1px solid #cbd5e1; /* thin gray border */
+    border-radius: 8px; /* rounded corners */
+    padding: 16px; /* inside spacing */
+    max-width: 480px; /* limits width */
+    margin: 18px auto; /* centers the box */
+    text-align: left; /* aligns text to left */
+    font-family: sans-serif;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* soft drop shadow */
+}
+
+/* row spacing for detected specs */
+.status-row {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* spacing between dot and text */
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* green blinking status dot */
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e; /* bright green */
+    border-radius: 50%; /* makes it a circle */
+    display: inline-block;
+}
+
+/* divider line inside specs card */
+.panel-divider {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 12px 0;
+}
+
+/* ram size dropdown styling */
+.spec-dropdown {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 6px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+/* row container for trust badges */
+.trust-badges {
+    display: flex;
+    justify-content: center; /* centers badges horizontally */
+    flex-wrap: wrap; /* wraps on small screens */
+    gap: 10px;
+    margin: 14px 0;
+}
+
+/* pill style for each badge */
+.badge {
+    background: #e2e8f0;
+    padding: 4px 10px;
+    border-radius: 12px; /* pill shape */
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* downloads count and rating text */
+.stats-counter {
+    font-size: 13px;
+    color: #475569;
+    margin: 10px 0;
+}
+
+/* reviews section wrapper */
+.reviews-container {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/* section title */
+.reviews-container h3 {
+    font-size: 16px;
+    color: #334155;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* individual card styling */
+.review-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* top row of the card */
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+/* profile emoji circle */
+.user-avatar {
+    font-size: 20px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* verified badge */
+.verified-tag {
+    font-size: 11px;
+    color: #16a34a; /* green */
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+/* star rating icons */
+.stars {
+    margin-left: auto; /* pushes stars to far right */
+    color: #eab308; /* yellow star color */
+    font-size: 14px;
+}
+
+/* review body text */
+.review-text {
+    font-size: 13px;
+    color: #475569;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* progress modal overlay */
+.progress-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* inner progress card */
+.progress-box {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* empty bar container */
+.progress-bar-container {
+    width: 100%;
+    height: 18px;
+    background: #e2e8f0;
+    border-radius: 9px;
+    overflow: hidden;
+    margin: 14px 0;
+}
+
+/* dynamic blue progress fill */
+.progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    transition: width 0.2s ease;
+}
+
+/* progress text label */
+#progress-status {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* small-print legal footer */
+.legal-footer {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 11px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.footer-links span {
+    cursor: pointer;
+    text-decoration: underline;
+}

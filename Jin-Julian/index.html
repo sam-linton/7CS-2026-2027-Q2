@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free RAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FREE RAM</h1>
+    <h2>Need more ram? ask no more!</h2>
+
+    <div class="stats-counter">
+        <p> <strong>1,482,903</strong> users downloaded ram today</p>
+        <p>Rating: <strong>4.9 / 5</strong> (32,410 reviews)</p>
+    </div>
+
+    <div class="system-panel">
+        <div class="status-row">
+            <span class="pulse-dot"></span>
+            <span>Detected system: <strong>Computer Pro Air Ultra Plus</strong></span>
+        </div>
+        <div class="status-row">
+            <span>Current memory: <strong>4.00 GB (low performance detected!)</strong></span>
+        </div>
+        <hr class="panel-divider">
+        
+        <label for="ram-select"><strong>Choose amount:</strong></label>
+        <select id="ram-select" class="spec-dropdown">
+            <option>16 GB Ultra (Recommended)</option>
+            <option>32 GB High-Speed</option>
+            <option>64 GB Mega</option>
+            <option>128 GB Cloud RAM</option>
+        </select>
+    </div>
+
+    <div class="trust-badges">
+        <span class="badge"> 100% virus-free</span>
+        <span class="badge"> norton verified</span>
+        <span class="badge"> direct cloud</span>
+        <span class="badge"> 0 ping</span>
+    </div>
+
+    <div class="reviews-container">
+        <h3>User Testimonials &amp; Feedback</h3>
+
+        <div class="review-card">
+            <div class="review-header">
+
+                <div>
+                    <strong>Albert(verified coder)</strong>
+                    <span class="verified-tag"> verified user</span>
+                </div>
+                <span class="stars">★★★★★</span>
+            </div>
+            <p class="review-text">very good i got lots of storage for steam games now </p>
+        </div>
+
+        
+        <div class="review-card">
+            <div class="review-header">
+                <div>
+                    <strong>bigmama</strong>
+                    <span class="verified-tag">verified user</span>
+                </div>
+                <span class="stars">★★★★★</span>
+            </div>
+            <p class="review-text">I downloaded it and I got a buncha free ram </p>
+        </div>
+        
+
+        <div class="review-card">
+            <div class="review-header">
+                <div>
+                    <strong>farmer joe</strong>
+                    <span class="verified-tag"> verified user</span>
+                </div>
+                <span class="stars">★☆☆☆☆</span>
+            </div>
+            <p class="review-text">i didnt get anything...i wanted a ram to add to my farm...it only made my computer really hot and now i have 3rd degree burns on my fingers and my computer started to turn on some hidden fans...</p>
+        </div>
+    </div>
+
+    <button type="button" id="button">Download Free RAM</button>
+
+    <div id="progress-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.65); align-items:center; justify-content:center; z-index:99999;">
+        <div style="background:#ffffff; padding:24px 28px; border-radius:10px; width:340px; text-align:center; box-shadow:0 12px 30px rgba(0,0,0,0.3); font-family:sans-serif;">
+            <h4 style="margin:0 0 14px 0; color:#1e293b;">Downloading RAM Allocation...</h4>
+            <div style="width:100%; height:16px; background:#e2e8f0; border-radius:8px; overflow:hidden; margin-bottom:12px;">
+                <div id="progress-fill" style="width:0%; height:100%; background:#2563eb; transition:width 0.15s ease;"></div>
+            </div>
+            <p id="progress-status" style="font-size:12px; color:#64748b; margin:0;">Connecting to virtual RAM servers (0%)...</p>
+        </div>
+    </div>
+
+    <footer class="legal-footer">
+        <p>RAM Technologies. All rights reserved.</p>
+        <p>Patent Pending</p>
+        <div class="footer-links">
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById("button").addEventListener("click", function () {
+        for (let i = 0; i < 15; i++) {
+            const messages = ["SILICON OVERLOAD", "COMBUSTION IMMINENT", "RAM OVERLOAD: GB FULL", "PASSWORDS COMPROMISED, CHANGE NOW?", "BANK ALERT: 50,000 HAS BEEN TRANSFERED FROM YOUR ACCOUNT", "SERVICES ALERTED!!", "ERROR 404", "MOTHERBOARD OVERHEATING", "YOUR CHROME ACCOUNT HAS BEEN COMPROMISED: CHANGE PASSWORD NOW", "YOUR APPLE ACCOUNT HAS BEEN COMPROMISED: CHANGE NOW"];
+            alert(messages[Math.floor(Math.random() * messages.length)]);
+        }
+        alert("COMPUTER GLITCHED, INITIATING SHUT DOWN");
+        alert("FORCE RESTARTING YOUR COMPUTER IN 3");
+        alert("FORCE RESTARTING YOUR COMPUTER IN 2");
+        alert("FORCE RESTARTING YOUR COMPUTER IN 1")
+        document.documentElement.style.background = "black";
+    document.body.style.background = "black";
+    document.querySelectorAll("body *").forEach(e => e.style.display = "none");
+    });
+    </script>
+
+   
+</body>
+</html>
