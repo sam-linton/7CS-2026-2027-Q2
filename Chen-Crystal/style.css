@@ -1,0 +1,43 @@
+{
+    margin: 3;
+    padding: 3;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(224, 165, 18);
+}
+
+h2 {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(224, 165, 18);
+}
+
+h3 {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(82, 3, 116);
+    line-height: 1.6;
+}
+
+.piggies {
+    display: flex;
+    align-items: flex-end;
+    #peppa {
+        width: 12.5rem;
+    }
+    #george {
+        width: 12rem;
+    }
+    #evie {
+        width: 7rem;
+    }
+}
+.label {
+    margin: 3rem;
+}

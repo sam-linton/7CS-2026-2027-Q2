@@ -1,0 +1,57 @@
+/* why are you looking at my souce code, you creep? */
+body {
+    font-family: Swanky and Moo Moo;
+}
+
+input {
+    background-color: rgb(69, 178, 214, 0.702);
+    width: 30%;
+    height: 2rem;
+}
+
+input:hover {
+    background-color: rgb(0, 191, 255);
+}
+
+button {
+display: inline-block;
+padding: 10px 20px;
+background-color: rgba(69, 178, 214, 0.702);
+color: white;
+text-decoration: none;
+border-radius: 20px;
+text-align: center;
+font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(0, 191, 255);
+}
+
+button:active {
+    scale: 115%;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.review-item p {
+    margin: 0;
+}
+
+.delete-btn {
+    background-color: rgb(67, 178, 214, 0.702);
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(0, 191, 255);
+}

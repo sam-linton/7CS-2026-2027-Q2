@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="Klara and the Sun.png" type="image/x-icon">
+    <link rel="stylesheet" href="reviewstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+    <title>Klara and the Sun - Reviews</title>
+</head>
+
+<body onload="setBook('KlaraSun')">
+    <h1>Klara and the Sun - Reviews</h1>
+    <input type="text" id="review" name="secretInput" placeholder="Review Here!">
+    <button onclick="saved(event,'KlaraSun')" id="saveButton">Submit</button>
+    <div id="secretContent" style="display: none;">
+        <h3>Access Granted! Now you can delete reviews.</h3>
+    </div>
+    <div id="reviews"></div>
+</body>
+
+</html>

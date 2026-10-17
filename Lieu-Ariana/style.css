@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.hero {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.gallery {
+    background-image: linear-gradient(tan, beige);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.card {
+    font-family: "fredoka";
+    width: 15rem;
+    background-color: lightblue;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px
+    gray;
+
+    h1 {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+        height: 2rem;
+        overflow: scroll;
+    }
+}
+
+button {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+    background-color: lightcyan;
+    border-style: none;
+    padding: 0.25rem 0rem;
+    width:100%
+}
+
+h1 {
+    margin-top:0.5rem;
+    font-size:1.5rem;
+    
+}
+
+img {
+    width: 11rem;
+}
