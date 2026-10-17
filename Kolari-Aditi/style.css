@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light;
+  --ink: #342a32;
+  --muted: #756b74;
+  --pink: #e8899d;
+  --paper: #fffaf7;
+  --lilac: #eee8f5;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.page {
+  width: min(100% - 36px, 1120px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 1fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 5%;
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.intro {
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--pink);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--lilac);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 3px;
+}
+
+.since {
+  margin-top: 24px;
+}
+
+.portrait {
+  width: min(100%, 390px);
+  justify-self: center;
+  margin: 0;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 12px 32px rgb(52 42 50 / 12%);
+  transform: rotate(2deg);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.7;
+  object-fit: cover;
+}
+
+.portrait figcaption {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 4px 2px;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.portrait figcaption span,
+.note-star {
+  color: var(--pink);
+}
+
+.note {
+  padding: 30px 20px;
+  background: var(--lilac);
+  text-align: center;
+}
+
+.note-star {
+  font-size: 18px;
+}
+
+.note p {
+  font-family: var(--serif);
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: 1.5;
+}
+
+.note p strong {
+  color: var(--ink);
+}
+
+.note-signoff {
+  color: var(--muted);
+}
+
+@media (max-width: 680px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 2%;
+  }
+
+  .portrait {
+    width: min(82%, 340px);
+  }
+}
