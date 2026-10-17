@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+.heading {
+    background-color:burlywood ;
+    border-left: 1rem;
+    padding-left: 1rem;
+}
+.heading marquee {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.heading h1 {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    line-height: 1.5rem;
+    background-color: aliceblue;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.gallery h1 {
+    background-color: aliceblue;
+}
+
+.gallery{
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.garden {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+
+.merlion {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+.botanic {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+.marina {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+.sentosa {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+.chinatown {
+   padding: 0.5rem;
+    /* width: 15rem; */
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 1rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: blue;
+    text-shadow: 10px 5px 5px aqua;
+}
+
+.hero marquee {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.hero {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+}
+
+button {
+    text-transform: uppercase;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(76, 153, 222);
+    padding: 0.5rem;
+    border-style: none;
+    width: 100%;
+    cursor: pointer;
+}

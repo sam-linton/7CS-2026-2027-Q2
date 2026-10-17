@@ -1,0 +1,46 @@
+body, button {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('cookiebg.jpg');
+    background-size: cover;
+    color: white; 
+}
+
+h1 {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cookie {
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.cookie:hover {
+    transform: scale(1.05);
+}
+
+.cookie:active {
+    transform: scale(0.95);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.shine {
+    animation: spin 20s linear infinite;
+    transform-origin: center;
+}
