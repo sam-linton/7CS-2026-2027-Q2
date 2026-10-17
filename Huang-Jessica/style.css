@@ -1,0 +1,59 @@
+:root {
+    --one: rgb(227, 230, 244);
+    --two: rgb(246, 238, 185);
+    --three: rgb(2, 8, 44);
+
+}
+
+body {
+    background-color:rgb(2, 8, 44);
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: var(--one);
+    padding: 2rem;
+}
+
+
+h2{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--one);
+    a {
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--two)
+
+    }
+}
+
+.constellations {
+    display: inline-block;
+    align-items: center;
+    background-color: var(--one);
+    padding: 2rem;
+    margin: 2rem;
+    img{
+        width: 7rem;
+    }
+    h2 {
+        color: var(--three)
+    }
+    button {
+        font-family: 'Times New Roman', Times, serif;
+        background-color:rgb(255, 253, 233);
+        color: var(--three);
+        padding: 0.3rem;
+        border-radius: 1rem;
+        transition: 0.5s;
+
+        &:hover {
+            font-size: medium;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
